@@ -1,0 +1,75 @@
+@light-grey: #9197a3;
+@medium-grey: rgb(233, 234, 237);
+@dark-grey: darken(@medium-grey,10%);
+@dark-blue: #3b5998;
+
+@small-font: 9px;
+@medium-font: 1.375em;
+
+.calDay {
+  float: left;
+  font-family: 'Freight Sans Bold', 'lucida grande', tahoma, verdana, arial, sans-serif;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    float: left;
+
+    &.hours {
+      padding: 0 5px;
+      height: 750px;
+
+      li {
+        height: 3.300em;
+        color: @light-grey;
+        font-size: @small-font;
+        text-align: right;
+        line-height: 18px;
+
+        span {
+          color: #4e5665;
+          font-weight: 700;
+          font-size: @medium-font;
+          margin-right: 3px;
+        }
+
+        & + & {
+        }
+      }
+    }
+
+    &.events {
+      width: 600px;
+      height: 720px;
+      padding: 0 10px;
+      margin: 6px 0;
+      background-color: @medium-grey;
+      border-left: 1px solid @dark-grey;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+
+      li {
+          position:absolute;
+          background-color: #fff;
+          border: 1px solid @dark-grey;
+          border-left: 3px solid @dark-blue;
+          padding: 5px;
+          font-size: @small-font;
+          flex-shrink: 3;
+
+          h3 {
+            color: lighten(@dark-blue,10%);
+            font-size: @medium-font;
+            margin: 2px 0;
+          }
+
+          h4 {
+            color: @medium-grey;
+            margin: 2px 0;
+          }
+      }
+    }
+  }
+}

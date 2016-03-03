@@ -1,0 +1,56 @@
+.calDay {
+  float: left;
+  font-family: 'Freight Sans Bold', 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+.calDay ul {
+  list-style-type: none;
+  margin: 0;
+  float: left;
+}
+.calDay ul.hours {
+  padding: 0 5px;
+  height: 750px;
+}
+.calDay ul.hours li {
+  height: 3.300em;
+  color: #9197a3;
+  font-size: 9px;
+  text-align: right;
+  line-height: 18px;
+}
+.calDay ul.hours li span {
+  color: #4e5665;
+  font-weight: 700;
+  font-size: 1.375em;
+  margin-right: 3px;
+}
+.calDay ul.events {
+  width: 600px;
+  height: 720px;
+  padding: 0 10px;
+  margin: 6px 0;
+  background-color: #e9eaed;
+  border-left: 1px solid #cdcfd6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.calDay ul.events li {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #cdcfd6;
+  border-left: 3px solid #3b5998;
+  padding: 5px;
+  font-size: 9px;
+  flex-shrink: 3;
+}
+.calDay ul.events li h3 {
+  color: #4c70ba;
+  font-size: 1.375em;
+  margin: 2px 0;
+}
+.calDay ul.events li h4 {
+  color: #e9eaed;
+  margin: 2px 0;
+}
